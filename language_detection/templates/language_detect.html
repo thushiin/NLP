@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Language Detection</title>
+</head>
+<body>
+    <h1 class="heading">LANGUAGE DETECTION</h1>
+    <form action="predict" method="post">
+        <div class="m">
+            <label id="message">Language:</label>
+            <input type="text" name="message" id="msg" ><br>
+            <button type="submit" class="sub">SUBMIT</button>
+        </div>
+        <h2>{{ prediction }}</h2>
+    </form>
+</body>
+</html>
